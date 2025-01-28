@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/logo.png'; 
+import LOGO from '../assets/LOGO.jpg'; 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +8,12 @@ function Navbar() {
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50 font-serif">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* Logo - Updated to more compact dimensions */}
           <div className="flex-shrink-0 flex items-center">
             <img 
-              src={logo} 
+              src={LOGO} 
               alt="Company Logo" 
-              className="h-16 w-auto cursor-pointer"
+              className="h-20 w-20 cursor-pointer object-contain" // Made dimensions square and removed padding
             />
           </div>
 
