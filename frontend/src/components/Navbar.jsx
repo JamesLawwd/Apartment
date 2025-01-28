@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import LOGO from '../assets/LOGO.jpg'; 
 
 function Navbar() {
@@ -20,18 +21,18 @@ function Navbar() {
           {/* Desktop Menu - Updated positioning and font size */}
           <div className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center space-x-12"> {/* Increased space between links */}
-              <a href="/" className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              <Link to="home" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Home
-              </a>
-              <a href="/explore" className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              </Link>
+              <Link to="explore" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Explore Houses
-              </a>
-              <a href="/about" className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              </Link>
+              <Link to="about" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 About
-              </a>
-              <a href="/contact" className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              </Link>
+              <Link to="contact" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -65,18 +66,18 @@ function Navbar() {
         } overflow-hidden`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="/" className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+          <Link to="home" smooth={true} duration={500} className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
             Home
-          </a>
-          <a href="/explore" className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+          </Link>
+          <Link to="explore" smooth={true} duration={500} className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
             Explore Houses
-          </a>
-          <a href="/about" className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+          </Link>
+          <Link to="about" smooth={true} duration={500} className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
             About
-          </a>
-          <a href="/contact" className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+          </Link>
+          <Link to="contact" smooth={true} duration={500} className="block text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
