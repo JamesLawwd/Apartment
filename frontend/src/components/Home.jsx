@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import home from '../assets/home.jpeg'; 
 
 function Home() {
@@ -77,7 +78,12 @@ function Home() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-center">
+          <Link 
+            to="explore"
+            smooth={true} 
+            duration={500} 
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-center cursor-pointer"
+          >
             <p className="text-sm mb-2">SCROLL FOR MORE INFO</p>
             <svg 
               className="h-6 w-6 mx-auto animate-bounce" 
@@ -92,7 +98,7 @@ function Home() {
                 d="M19 14l-7 7m0 0l-7-7m7 7V3" 
               />
             </svg>
-          </div>
+          </Link>
         </div>
       </div>
 

@@ -73,6 +73,9 @@ function ExploreHouses() {
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Explore our carefully designed spaces that blend comfort with modern elegance
         </p>
+        <div className="mt-4 bg-purple-400 text-white text-sm font-bold px-3 py-2 rounded-lg inline-block">
+          4 units remaining
+        </div>
       </div>
 
       {/* Existing Image Grid Section */}

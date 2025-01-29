@@ -1,6 +1,8 @@
+import About from './components/About'
 import ExploreHouses from './components/ExploreHouses';
 import Home from './components/Home';
 import Navbar from './components/Navbar'
+
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
         <ExploreHouses />
       </div>
       <div id="about">
-        {/* About Component */}
+        <About/>
       </div>
       <div id="contact">
         {/* Contact Component */}
