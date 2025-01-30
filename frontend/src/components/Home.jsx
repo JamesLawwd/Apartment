@@ -46,13 +46,15 @@ function Home() {
               />
             </svg>
             <span className="text-lg">DAGORETTI, NAIROBI COUNTY</span>
+            
+           
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            VINDEN APARTMENTS 
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2">
+            VINDEN APARTMENTS
           </h1>
-
+         
           {/* Property Tags */}
           <div className="flex items-center space-x-4 text-white mb-8">
             <span className="flex items-center">
@@ -75,7 +77,16 @@ function Home() {
               </svg>
               FOR RENT
             </span>
+           
           </div>
+          <span className="flex items-center text-white text-2xl underline">
+              <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                {/* SVG for price tag */}
+              </svg>
+               2Bedroom KESX,XXX/month
+            </span>
+
+         
 
           {/* Scroll Indicator */}
           <Link 

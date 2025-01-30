@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import bathroomImage from '../assets/bathroom.jpeg';
+import bathroomImage from '../assets/bath.jpg';
 import kitchenImage from '../assets/kitchen.jpeg'
+import restroom from '../assets/restroom1.jpg'
 
 function ExploreHouses() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,8 +32,8 @@ function ExploreHouses() {
     },
     {
       id: 5,
-      image: "/path-to-image5.jpg",
-      title: "Dining Room"
+      image: restroom,
+      title: "RestRoom"
     },
     {
       id: 6,
@@ -64,7 +65,7 @@ function ExploreHouses() {
   };
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20 bg-purple-50">
       {/* Heading Section */}
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -79,7 +80,7 @@ function ExploreHouses() {
       </div>
 
       {/* Existing Image Grid Section */}
-      <div className="relative max-w-7xl mx-auto px-4">
+      <div className="relative max-w-7xl mx-auto px-4  bg-purple-50">
         {/* Navigation Arrows */}
         {/* <button 
           onClick={prevSlide}

@@ -36,7 +36,8 @@ const RealEstatePage = () => {
         <img
           src={home1}
           alt="Modern Apartment"
-          className="rounded-lg shadow-lg w-full h-30"
+          className="rounded-lg shadow-lg"
+          style={{ width: '1879px', height: '764px' }}
         />
       </div>
 
