@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import bathroomImage from '../assets/bath.jpg';
 import kitchenImage from '../assets/kitchen.jpeg'
 import restroom from '../assets/restroom1.jpg'
@@ -8,7 +7,7 @@ import restroom from '../assets/restroom1.jpg'
 function ExploreHouses() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Sample data - replace with your actual images
+  
   const properties = [
     {
       id: 1,
@@ -52,17 +51,10 @@ function ExploreHouses() {
     },
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === properties.length - 4 ? 0 : prevIndex + 1
-    );
-  };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? properties.length - 4 : prevIndex - 1
-    );
-  };
+
+
+  
 
   return (
     <div className="py-20 bg-purple-50">
@@ -81,20 +73,9 @@ function ExploreHouses() {
 
       {/* Existing Image Grid Section */}
       <div className="relative max-w-7xl mx-auto px-4  bg-purple-50">
-        {/* Navigation Arrows */}
-        {/* <button 
-          onClick={prevSlide}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-all"
-        > */}
-          <ChevronLeftIcon className="h-6 w-6 text-gray-800" />
-        {/* </button>
         
-        <button  */}
-          {/* onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white transition-all"
-        >
-          <ChevronRightIcon className="h-6 w-6 text-gray-800" />
-        </button> */}
+        
+    
 
         {/* Images Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

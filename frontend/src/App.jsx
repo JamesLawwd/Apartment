@@ -1,7 +1,10 @@
+import React from 'react';
+import Contact from './components/Contact'
 import About from './components/About'
 import ExploreHouses from './components/ExploreHouses';
 import Home from './components/Home';
 import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,12 +21,15 @@ function App() {
         <About/>
       </div>
       <div id="contact">
-        {/* Contact Component */}
+        <Contact/>
       </div>
       <div className="pt-16"> 
         
+        
       </div>
+      <Footer />
     </div>
+    
   );
 }
 
