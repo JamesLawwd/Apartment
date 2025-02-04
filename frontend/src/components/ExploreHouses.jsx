@@ -1,60 +1,24 @@
 import React from 'react';
-import { useState } from 'react';
-import bathroomImage from '../assets/bath.jpg';
-import kitchenImage from '../assets/kitchen.jpeg'
-import restroom from '../assets/restroom1.jpg'
+import vbalcony from '../assets/vbalcony.mp4';
+import vbath from '../assets/vbath.mp4';
+import vbedroom from '../assets/vbedroom.mp4';
+import vbedroom2 from '../assets/vbedroom2.mp4';
+import vcordal from '../assets/vcordal.mp4';
+import vkitchen from '../assets/vkitchen.mp4';
+import vlivingroom from '../assets/vlivingroom.mp4';
+import shower from '../assets/shower.mp4'
 
 function ExploreHouses() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  
   const properties = [
-    {
-      id: 1,
-      image: "/path-to-image1.jpg",
-      title: "Living Room"
-    },
-    {
-      id: 2,
-      image: "/path-to-image2.jpg",
-      title: "Bedroom"
-    },
-    {
-      id: 3,
-      image: "/path-to-image3.jpg",
-      title: "Study Room"
-    },
-    {
-      id: 4,
-      image: kitchenImage,
-      title: "Kitchen"
-    },
-    {
-      id: 5,
-      image: restroom,
-      title: "RestRoom"
-    },
-    {
-      id: 6,
-      image: bathroomImage,
-      title: "Bathroom"
-    },
-    {
-      id: 7,
-      image: "/path-to-image7.jpg",
-      title: "Balcony"
-    },
-    {
-      id: 8,
-      image: "/path-to-image8.jpg",
-      title: "Master Bedroom"
-    },
+    { id: 1, video: vbedroom, title: "Bedroom" },
+    { id: 2, video: vkitchen, title: "Kitchen" },
+    { id: 3, video: vcordal, title: "Corridor" },
+    { id: 4, video: vbath, title: "Restroom"},
+    { id: 5, video: vlivingroom, title: "Living Room" },
+    { id: 6, video: vbedroom2, title: "Master Bedroom" },
+    { id: 7, video: vbalcony, title: "Balcony" },
+    { id: 8, video: shower, title: "Shower"}
   ];
-
-
-
-
-  
 
   return (
     <div className="py-20 bg-purple-50">
@@ -71,28 +35,25 @@ function ExploreHouses() {
         </div>
       </div>
 
-      {/* Existing Image Grid Section */}
-      <div className="relative max-w-7xl mx-auto px-4  bg-purple-50">
-        
-        
-    
-
-        {/* Images Grid */}
+      {/* Videos Grid Section */}
+      <div className="relative max-w-7xl mx-auto px-4 bg-purple-50">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {properties.map((property) => (
             <div 
               key={property.id}
               className="relative overflow-hidden rounded-lg shadow-lg group"
             >
-              <img
-                src={property.image}
-                alt={property.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              <video
+                src={property.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                playbackRate={0.25}
+                className="w-full h-64 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">
-                  {property.title}
-                </span>
+              <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-semibold font-sans text-center py-2">
+                {property.title}
               </div>
             </div>
           ))}

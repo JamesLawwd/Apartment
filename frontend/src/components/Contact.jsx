@@ -4,6 +4,7 @@ import { Phone, MessageCircle } from "lucide-react"; // Importing Phone and What
 
 export default function ContactSection() {
   const phoneNumber = "+254714178292"; // Your phone number
+  const destination = "Rungiri, Nairobi"; // Destination for directions
 
   return (
     <div className="bg-gray-100 min-h-screen p-4 py-12">
@@ -11,7 +12,7 @@ export default function ContactSection() {
         {/* Left Side - Google Map */}
         <div className="w-full h-[400px] md:h-[500px]">
           <a
-            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent("Rungiri, Nairobi")}`}
+            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full h-full rounded-lg shadow-md block"
