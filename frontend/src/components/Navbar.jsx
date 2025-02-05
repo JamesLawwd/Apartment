@@ -21,16 +21,16 @@ function Navbar() {
           {/* Desktop Menu - Updated positioning and font size */}
           <div className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center space-x-12"> {/* Increased space between links */}
-              <Link to="home" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              <Link to="home" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-purple-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Home
               </Link>
-              <Link to="explore" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              <Link to="explore" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-purple-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Explore Houses
               </Link>
-              <Link to="about" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
-                About
+              <Link to="about" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-purple-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+                Overview 
               </Link>
-              <Link to="contact" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-red-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
+              <Link to="contact" smooth={true} duration={500} className="text-lg text-gray-700 hover:text-purple-600 px-3 py-2 font-medium transition-colors duration-300 font-serif">
                 Contact Us
               </Link>
             </div>
@@ -40,7 +40,7 @@ function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 focus:outline-none transition-colors duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-purple-600 focus:outline-none transition-colors duration-300"
             >
               <svg
                 className="h-6 w-6 transition-transform duration-300"

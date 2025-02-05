@@ -1,6 +1,6 @@
 import React from 'react';
 import Contact from './components/Contact'
-import About from './components/About'
+import Overview from './components/Overview'
 import ExploreHouses from './components/ExploreHouses';
 import Home from './components/Home';
 import Navbar from './components/Navbar'
@@ -18,7 +18,7 @@ function App() {
         <ExploreHouses />
       </div>
       <div id="about">
-        <About/>
+        <Overview/>
       </div>
       <div id="contact">
         <Contact/>
