@@ -83,7 +83,7 @@ function Home() {
               <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 {/* SVG for price tag */}
               </svg>
-               2Bedroom KESX,XXX/month
+               2Bedroom KES26,000/month
             </span>
 
          

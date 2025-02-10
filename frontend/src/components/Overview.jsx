@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   FaWifi, 
-  FaParking, 
+  FaTools, 
   FaTint, 
   FaVideo, 
   FaBroom, 
@@ -14,7 +14,7 @@ import apartmentImg from '../assets/home1.jpeg'; // Replace with your actual ima
 function ServicesOffered() {
   const services = [
     { id: 1, icon: <FaWifi className="h-12 w-12 text-purple-600" />, title: "Reliable Fibre Internet" },
-    { id: 2, icon: <FaParking className="h-12 w-12 text-purple-600" />, title: "Ample Parking" },
+    { id: 2, icon: <FaTools className="h-12 w-12 text-purple-600" />, title: "Fast Repair Services" }, // Updated Icon
     { id: 3, icon: <FaTint className="h-12 w-12 text-purple-600" />, title: "Uninterrupted Water Access" },
     { id: 4, icon: <FaVideo className="h-12 w-12 text-purple-600" />, title: "CCTV Surveillance" },
     { id: 5, icon: <FaBroom className="h-12 w-12 text-purple-600" />, title: "Flawless Living Environment" },

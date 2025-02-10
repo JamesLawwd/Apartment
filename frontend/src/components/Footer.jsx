@@ -4,7 +4,7 @@ import logo from '../assets/LOGO.jpg';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-50 text-gray-800 py-10">
+    <footer className="bg-purple-200 text-black py-10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo Section */}
         <div className="flex justify-center md:justify-start">
@@ -24,7 +24,7 @@ const Footer = () => {
             Phone:{' '}
             <a
               href="tel:+254714178292"
-              className="hover:text-purple-600 transition duration-200"
+              className="hover:text-black transition duration-200"
             >
               +254 714 178 292
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             Email:{' '}
             <a
               href="mailto:jleo56291@gmail.com"
-              className="hover:text-purple-600 transition duration-200"
+              className="hover:text-black transition duration-200"
             >
               jleo56291@gmail.com
             </a>
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
           <a
             href="tel:+254714178292"
-            className="text-gray-600 hover:text-gray-800 transition duration-200"
+            className="text-gray-600 hover:text-black transition duration-200"
           >
             <FaPhone className="h-8 w-8" />
           </a>
